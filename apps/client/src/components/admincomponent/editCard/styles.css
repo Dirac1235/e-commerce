@@ -1,0 +1,79 @@
+.editcard {
+  background: rgba(255, 255, 255, 0.21);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.9px);
+  -webkit-backdrop-filter: blur(6.9px);
+  border: 1px solid rgba(255, 255, 255, 0.23);
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.editcard .view {
+  width: 150px;
+}
+.editcard > img {
+  border-radius: 16px;
+  width: 220px;
+}
+.margion20 {
+  margin-top: 100px;
+}
+.editcard h3 {
+  margin: 0;
+}
+.editcard p {
+  margin: 0;
+}
+.editcard_discriptions {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.editcard-btn-container {
+  display: flex;
+  gap: 20px;
+}
+.editcard-btn-container button {
+  padding: 5px 15px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: none;
+}
+.editcard-btn-container button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+.editcard-btn-container .delete-btn {
+  background-color: rgb(207, 14, 14);
+  color: white;
+}
+.editcard_discriptions p {
+  display: flex;
+  color: green;
+  gap: 3px;
+}
+.editcard_discriptions p > span {
+  color: black;
+}
+.editcard .disc {
+  color: black;
+  font-size: 12px;
+  margin-top: 13px;
+}
+
+.editcard-btn-container .edit-btn {
+  background-color: rgb(5, 137, 146);
+  color: white;
+}
+
+.padding10 {
+  padding: 10;
+}

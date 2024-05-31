@@ -1,0 +1,10 @@
+.product_for_order{
+    height:230px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(184, 176, 176);
+}
+.product_for_order img{
+    height: 100px;
+    border-radius: 10px;
+}

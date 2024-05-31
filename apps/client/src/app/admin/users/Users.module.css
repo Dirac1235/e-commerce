@@ -1,0 +1,92 @@
+.users_table {
+  padding-top: 120px;
+  margin-left: 200px;
+  width: 550px;
+}
+.name_header {
+  background-color: white;
+  margin: 0;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  z-index: 100;
+  left: 220px;
+  top: 0;
+  position: fixed;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.users {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search_users,
+.userheader_container,
+.users_table .header_titles,
+.users_table .search_users,
+.users_table .userheader_container,
+.users_table .table {
+  display: flex;
+}
+.users_table {
+  padding: 10rem, 50rem;
+  margin-left: 200px;
+  width: 45rem;
+}
+
+.search_users,
+.users_table .search_users {
+  align-items: center;
+  gap: 5px;
+}
+
+.userheader_container input,
+.users_table .userheader_container input {
+  padding: 6px 15px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(180, 176, 176);
+}
+
+.userheader_container input:focus,
+.users_table .userheader_container input:focus {
+  outline: none;
+  border: none;
+}
+.userheader_container {
+  margin-bottom: 20px;
+}
+
+.table {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.table p,
+.users_table .table > p {
+  width: 130px;
+  overflow: hidden;
+  
+
+}
+
+.table .small {
+  width: 90px;
+}
+
+.users_information_contatiner_light {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  background-color: rgb(223, 220, 220);
+  padding: 5px;
+}

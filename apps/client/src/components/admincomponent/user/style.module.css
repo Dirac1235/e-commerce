@@ -1,0 +1,24 @@
+.users_information_contatiner_light {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  background-color: rgb(223, 220, 220);
+  padding: 20px 5px;
+}
+.users_information_contatiner_dark {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  background-color: rgb(194, 186, 186);
+  padding: 20px 5px;
+}
+.btn_users_info {
+  display: flex;
+  gap: 10px;
+}
+.btn_users_info .delete {
+  background-color: rgb(220, 62, 62);
+  padding: 5px 15px;
+  color: white;
+  border-radius: 8px;
+}

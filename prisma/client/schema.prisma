@@ -1,0 +1,105 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "./client"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String     @id @default(uuid())
+  firstName String     @db.VarChar(100)
+  lastName  String     @db.VarChar(100)
+  email     String     @unique
+  password  String     @db.VarChar(120)
+  phone     String     @db.VarChar(50)
+  address   String     @db.VarChar(100)
+  role      UserRole   @default(CUSTOMER)
+  blocked   Boolean    @default(false)
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+  image     String?    @db.VarChar(255)
+  order     Order[]
+  wishlist  Wishlist[]
+
+  @@map("users")
+}
+
+model Product {
+  id          String      @id @default(uuid())
+  name        String      @db.VarChar(255)
+  price       Float       @default(0)
+  description String?
+  image       String      @db.VarChar(255)
+  categoryId  String
+  wishlist    Wishlist[]
+  orderItems  OrderItem[]
+  category    Category    @relation(fields: [categoryId], references: [id])
+
+  @@map("products")
+}
+
+model Wishlist {
+  id        String  @id @default(uuid()) @db.VarChar(36)
+  userId    String  @db.VarChar(36)
+  productId String  @db.VarChar(36)
+  user      User    @relation(fields: [userId], references: [id])
+  product   Product @relation(fields: [productId], references: [id])
+
+  @@map("Wishlists")
+}
+
+model Category {
+  id       String    @id @default(uuid())
+  name     String    @db.VarChar(255)
+  products Product[]
+
+  @@map("categories")
+}
+
+model OrderItem {
+  id         String  @id @default(uuid())
+  quantity   Int     @default(1)
+  totalPrice Float?  @default(0)
+  productId  String
+  orderId    String?
+  order      Order?  @relation(fields: [orderId], references: [id])
+  product    Product @relation(fields: [productId], references: [id])
+
+  @@map("orderItems")
+}
+
+model Order {
+  id            String        @id @default(uuid())
+  userId        String
+  paymentRef    String?       @db.VarChar(255)
+  totalPrice    Float
+  paymentStatus PaymentStatus @default(PENDING)
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+  orderItems    OrderItem[]
+  user          User          @relation(fields: [userId], references: [id])
+
+  @@map("orders")
+}
+
+model Post {
+  id      Int     @id @default(autoincrement())
+  title   String
+  content String?
+}
+
+enum UserRole {
+  ADMIN    @map("admin")
+  CUSTOMER @map("customer")
+  DRIVER   @map("driver")
+}
+
+enum PaymentStatus {
+  PENDING  @map("PENDING")
+  CANCELED @map("CANCELED")
+  NOTPAID  @map("NOTPAID")
+  PAID     @map("PAID")
+}

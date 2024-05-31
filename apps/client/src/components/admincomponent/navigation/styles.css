@@ -1,0 +1,63 @@
+.navigation{
+    padding: 5px 10px;
+    background: rgba(58, 4, 49, 0.89);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+    position: fixed;
+    gap: 70px;
+    width: 220px;   
+    top: 0;
+	height: 100vh;
+}
+.admin_top{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: rgb(187, 183, 183);
+}
+.admin_top .admin_img{
+    border-radius: 50%;
+    height: 60px;
+}
+.admin_top p{
+    margin: 0;
+    margin-top: 5px;
+    font-size: 12px;
+}
+.admin_top h4{
+    margin: 0;
+    font-size: 14px;
+}
+
+nav{
+display: flex;
+flex-direction: column;
+gap: 20px;
+
+}
+nav a{
+	display: flex;
+	justify-self:center ;
+	align-items: center;
+	text-transform: uppercase;
+	text-decoration: none;
+    font-size: 14px;
+    color: rgb(219, 211, 211);
+	text-align: center;
+	padding: 5px 10px;
+	border-radius: 8px;
+
+
+}
+nav a:hover{
+	color:rgb(255, 251, 251);
+}
+

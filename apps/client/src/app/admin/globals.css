@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(218, 215, 215);
+  display: flex;
+}
+.name_header {
+  background-color: white;
+  margin: 0;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  z-index: 100;
+  left: 220px;
+  top: 0;
+  position: fixed;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.home_info {
+  padding-top: 100px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.barchart,
+.piechart,
+.linechart {
+  border-radius: 10px;
+  background-color: rgb(231, 229, 229);
+}
+
+.barchart {
+  width: 600px;
+  height: 300px;
+  padding: 20px 0;
+  padding-right: 0;
+}
+
+.piechart {
+  width: 500px;
+  height: 300px;
+  padding: 10px 0;
+}
+
+.linechart {
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 570px;
+  height: 290px;
+  padding: 10px;
+}
+
+.bar_pie_container {
+  display: flex;
+  margin-top: 25px;
+  gap: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.body {
+  margin-left: 182px;
+  width: 100%;
+}
+
+.from_product {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.from_product > form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  width: 40%;
+  gap: 20px;
+}
+
+.from_product label {
+  width: 260px;
+  font-size: 18px;
+}
+
+.from_product div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.from_product input {
+  padding: 10px 15px;
+  border: none;
+  font-size: 17px;
+  border-radius: 7px;
+  width: 400px;
+}
+
+.from_product input:focus {
+  outline: none;
+  border: none;
+}
+
+.from_product button {
+  height: 40px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+.imggshgshsg {
+  margin-top: 200px;
+  margin-left: 100px;
+}
+
+/* total */
+.totals {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  width: 100%;
+}
+.home_container_center {
+  width: 1100px;
+}
+
+.total_elem {
+  width: 250px;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  height: 78px;
+  border-radius: 8px;
+  background-color: rgb(196, 190, 190);
+  align-items: center;
+}
+
+.total_elem img {
+  width: 40px;
+}
+
+.total_elem h3 {
+  margin: 0;
+  margin-top: 10px;
+}
+
+.total_elem h4 {
+  margin-top: 4px;
+}
+
+/* user */
+.users {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-users,
+.userheader-container,
+.users_table .header-titles,
+.users_table .search-users,
+.users_table .userheader-container,
+.users_table .table {
+  display: flex;
+}
+.users_table {
+  padding-top: 120px;
+  margin-left: 200px;
+  width: 950px;
+}
+
+.search-users,
+.users_table .search-users {
+  align-items: center;
+  gap: 5px;
+}
+
+.userheader-container input,
+.users_table .userheader-container input {
+  padding: 6px 15px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(180, 176, 176);
+}
+
+.userheader-container input:focus,
+.users_table .userheader-container input:focus {
+  outline: none;
+  border: none;
+}
+.userheader-container {
+  margin-bottom: 20px;
+}
+
+.table {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.table p,
+.users_table .table > p {
+  width: 130px;
+  overflow: hidden;
+}
+
+.table .small {
+  width: 90px;
+}
+
+.users_information_contatiner_light {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  background-color: rgb(223, 220, 220);
+  padding: 5px;
+}
+
+/* recten order  */
+
+.recent_order {
+  display: grid;
+  grid-template-columns: 100px 200px 240px 200px 140px 100px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+.recent_orderss {
+  width: 1100px;
+  padding: 20px;
+  background-color: rgba(233, 228, 228, 0.795);
+  font-size: 14px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.recent_title {
+  margin-bottom: 30px;
+  font-size: 16px;
+}

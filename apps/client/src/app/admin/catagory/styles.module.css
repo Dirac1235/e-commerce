@@ -1,0 +1,59 @@
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  gap: 20px;
+  align-items: center;
+  padding-top: 100px;
+  padding-left: 90px;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(218, 215, 215);
+}
+.products > .add_products {
+  background: rgba(255, 255, 255, 0.21);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.9px);
+  -webkit-backdrop-filter: blur(6.9px);
+  border: 1px solid rgba(255, 255, 255, 0.23);
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.products .add {
+  background-color: rgb(0, 180, 30);
+  padding: 10px 20px;
+  font-size: 30px;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 1100;
+  transition: opacity 0.8s ease;
+}
+
+.products .add::after {
+  content: "ADD CATAGORY";
+  display: none; /* Initially hide the content */
+}
+
+.products .add:hover::after {
+  display: flex; /* Show the content when hovering */
+  font-size: 16px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.products .add:hover {
+  opacity: 0.7;
+}
+
+.products a {
+  color: white;
+  text-decoration: none;
+}
